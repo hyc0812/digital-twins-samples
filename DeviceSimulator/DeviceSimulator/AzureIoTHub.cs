@@ -16,13 +16,13 @@ namespace DeviceSimulator
         /// Please replace with correct connection string value
         /// The connection string could be got from Azure IoT Hub -> Shared access policies -> iothubowner -> Connection String:
         /// </summary>
-        private const string iotHubConnectionString = "<your-hub-connection-string>";
+        private const string iotHubConnectionString = "HostName=iot-hub-yong.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=ujBvO04MEsl/g3QtUrjpQIRv9VfU1O3vg+Yto7in0M0=";
 
         /// <summary>
         /// Please replace with correct device connection string
         /// The device connect string could be got from Azure IoT Hub -> Devices -> {your device name } -> Connection string
         /// </summary>
-        private const string deviceConnectionString = "<your-device-connection-string>";
+        private const string deviceConnectionString = "HostName=iot-hub-yong.azure-devices.net;DeviceId=thermostat67;SharedAccessKey=CVEPhASDCMY9vGtge5reCRnld9bBjSys6AreEft2fxE=";
 
         public static async Task<string> CreateDeviceIdentityAsync(string deviceName)
         {
